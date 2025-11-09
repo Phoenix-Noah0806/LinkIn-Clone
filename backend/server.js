@@ -18,7 +18,15 @@ app.use(
   cors({
     origin: function (origin, callback) {
       if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) return callback(null, true);
+
+      // ✅ Allow local dev, live Netlify site, and Netlify preview URLs
+      if (
+        allowedOrigins.includes(origin) ||
+        /\.netlify\.app$/.test(origin) // matches ANY subdomain ending with .netlify.app
+      ) {
+        return callback(null, true);
+      }
+
       console.log("❌ Blocked by CORS:", origin);
       return callback(new Error("Not allowed by CORS"));
     },
@@ -27,6 +35,10 @@ app.use(
     credentials: true,
   })
 );
+
+// ✅ Important: handle preflight requests
+app.options("*", cors());
+
 
 // Optional: preflight requests
 app.options("*", cors());
