@@ -1,34 +1,54 @@
-# LinkedIn Clone
+# 🔗 LinkedIn Clone
 
-A full-stack social networking web application similar to LinkedIn, built with React.js, Node.js, Express.js, and MongoDB.
+A full-stack **social networking web application** inspired by LinkedIn, built with **React.js**, **Node.js**, **Express.js**, and **MongoDB**.
 
-## Features
+---
 
-### Core Features
-- ✅ **User Authentication**: Sign up and login with email and password
-- ✅ **Create Posts**: Users can create text posts after logging in
-- ✅ **View All Posts**: Public feed showing all posts from all users, sorted by latest first
-- ✅ **User Profile Display**: Shows user's name in the navigation bar
+## 🚀 Live Demo
 
-### Bonus Features
-- ✅ **Like Posts**: Users can like/unlike posts
-- ✅ **Comments**: Users can add comments to posts
-- ✅ **Edit Posts**: Users can edit their own posts
-- ✅ **Delete Posts**: Users can delete their own posts
-- ✅ **User Profiles**: View any user's profile with their posts
-- ✅ **Image Uploads**: Upload images with posts (up to 5MB)
-- ✅ **Public Feed**: All users can see posts from every registered user
-- ✅ **Latest First**: Posts are sorted by creation date (newest first)
+**Frontend (Deployed on Netlify):**  
+🔗 [https://linkin-clone.netlify.app](https://linkin-clone.netlify.app)
 
-## Tech Stack
+**Backend (Deployed on Render):**  
+🔗 [https://linkin-clone.onrender.com](https://linkin-clone.onrender.com)
 
-- **Frontend**: React.js
-- **Backend**: Node.js + Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-- **Password Hashing**: bcryptjs
+---
 
-## Project Structure
+## ✨ Features
+
+### 🧩 Core Features
+✅ **User Authentication:** Sign up and login with email and password  
+✅ **Create Posts:** Users can create text posts after logging in  
+✅ **View All Posts:** Public feed showing all posts from all users (latest first)  
+✅ **User Profile Display:** Displays logged-in user’s name in the navigation bar  
+
+### 💎 Bonus Features
+✅ Like/Unlike Posts  
+✅ Add Comments  
+✅ Edit & Delete Own Posts  
+✅ View User Profiles  
+✅ Image Uploads (up to 5MB per post)  
+✅ Feed sorted by newest first  
+✅ JWT Authentication  
+✅ Secure password hashing using bcryptjs  
+
+---
+
+## 🧠 Tech Stack
+
+**Frontend:** React.js (with Axios & React Router)  
+**Backend:** Node.js + Express.js  
+**Database:** MongoDB (via Mongoose)  
+**Authentication:** JWT (JSON Web Token)  
+**Password Hashing:** bcryptjs  
+**Hosting:**  
+- Frontend → Netlify  
+- Backend → Render  
+- Database → MongoDB Atlas  
+
+---
+
+## 🗂️ Project Structure
 
 ```
 LinkedIn clone/
